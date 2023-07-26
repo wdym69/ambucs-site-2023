@@ -1,34 +1,148 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="profile" href="http://gmpg.org/xfn/11"> <script defer src="data:text/javascript;base64,CiAgICAgICAgKGZ1bmN0aW9uIChleHBvcnRzLCBkKSB7CiAgICAgICAgICAgIHZhciBfaXNSZWFkeSA9IGZhbHNlLAogICAgICAgICAgICAgICAgX2V2ZW50LAogICAgICAgICAgICAgICAgX2ZucyA9IFtdOwoKICAgICAgICAgICAgZnVuY3Rpb24gb25SZWFkeShldmVudCkgewogICAgICAgICAgICAgICAgZC5yZW1vdmVFdmVudExpc3RlbmVyKCJET01Db250ZW50TG9hZGVkIiwgb25SZWFkeSk7CiAgICAgICAgICAgICAgICBfaXNSZWFkeSA9IHRydWU7CiAgICAgICAgICAgICAgICBfZXZlbnQgPSBldmVudDsKICAgICAgICAgICAgICAgIF9mbnMuZm9yRWFjaChmdW5jdGlvbiAoX2ZuKSB7CiAgICAgICAgICAgICAgICAgICAgdmFyIGZuID0gX2ZuWzBdLAogICAgICAgICAgICAgICAgICAgICAgICBjb250ZXh0ID0gX2ZuWzFdOwogICAgICAgICAgICAgICAgICAgIGZuLmNhbGwoY29udGV4dCB8fCBleHBvcnRzLCB3aW5kb3cualF1ZXJ5KTsKICAgICAgICAgICAgICAgIH0pOwogICAgICAgICAgICB9CgogICAgICAgICAgICBmdW5jdGlvbiBvblJlYWR5SWUoZXZlbnQpIHsKICAgICAgICAgICAgICAgIGlmIChkLnJlYWR5U3RhdGUgPT09ICJjb21wbGV0ZSIpIHsKICAgICAgICAgICAgICAgICAgICBkLmRldGFjaEV2ZW50KCJvbnJlYWR5c3RhdGVjaGFuZ2UiLCBvblJlYWR5SWUpOwogICAgICAgICAgICAgICAgICAgIF9pc1JlYWR5ID0gdHJ1ZTsKICAgICAgICAgICAgICAgICAgICBfZXZlbnQgPSBldmVudDsKICAgICAgICAgICAgICAgICAgICBfZm5zLmZvckVhY2goZnVuY3Rpb24gKF9mbikgewogICAgICAgICAgICAgICAgICAgICAgICB2YXIgZm4gPSBfZm5bMF0sCiAgICAgICAgICAgICAgICAgICAgICAgICAgICBjb250ZXh0ID0gX2ZuWzFdOwogICAgICAgICAgICAgICAgICAgICAgICBmbi5jYWxsKGNvbnRleHQgfHwgZXhwb3J0cywgZXZlbnQpOwogICAgICAgICAgICAgICAgICAgIH0pOwogICAgICAgICAgICAgICAgfQogICAgICAgICAgICB9CgogICAgICAgICAgICBkLmFkZEV2ZW50TGlzdGVuZXIgJiYgZC5hZGRFdmVudExpc3RlbmVyKCJET01Db250ZW50TG9hZGVkIiwgb25SZWFkeSkgfHwKICAgICAgICAgICAgZC5hdHRhY2hFdmVudCAmJiBkLmF0dGFjaEV2ZW50KCJvbnJlYWR5c3RhdGVjaGFuZ2UiLCBvblJlYWR5SWUpOwoKICAgICAgICAgICAgZnVuY3Rpb24gZG9tUmVhZHkoZm4sIGNvbnRleHQpIHsKICAgICAgICAgICAgICAgIGlmIChfaXNSZWFkeSkgewogICAgICAgICAgICAgICAgICAgIGZuLmNhbGwoY29udGV4dCwgX2V2ZW50KTsKICAgICAgICAgICAgICAgIH0KCiAgICAgICAgICAgICAgICBfZm5zLnB1c2goW2ZuLCBjb250ZXh0XSk7CiAgICAgICAgICAgIH0KCiAgICAgICAgICAgIGV4cG9ydHMubWVzbWVyaXplRG9tUmVhZHkgPSBkb21SZWFkeTsKICAgICAgICB9KSh3aW5kb3csIGRvY3VtZW50KTsKICAgIA=="></script> <title>Hello world! &#8211; AMBUCS Altoona</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="profile" href="http://gmpg.org/xfn/11">
+
+	    <script>(function (exports, d) {
+            var _isReady = false,
+                _event,
+                _fns = [];
+
+            function onReady(event) {
+                d.removeEventListener("DOMContentLoaded", onReady);
+                _isReady = true;
+                _event = event;
+                _fns.forEach(function (_fn) {
+                    var fn = _fn[0],
+                        context = _fn[1];
+                    fn.call(context || exports, window.jQuery);
+                });
+            }
+
+            function onReadyIe(event) {
+                if (d.readyState === "complete") {
+                    d.detachEvent("onreadystatechange", onReadyIe);
+                    _isReady = true;
+                    _event = event;
+                    _fns.forEach(function (_fn) {
+                        var fn = _fn[0],
+                            context = _fn[1];
+                        fn.call(context || exports, event);
+                    });
+                }
+            }
+
+            d.addEventListener && d.addEventListener("DOMContentLoaded", onReady) ||
+            d.attachEvent && d.attachEvent("onreadystatechange", onReadyIe);
+
+            function domReady(fn, context) {
+                if (_isReady) {
+                    fn.call(context, _event);
+                }
+
+                _fns.push([fn, context]);
+            }
+
+            exports.mesmerizeDomReady = domReady;
+        })(window, document);</script>
+	<title>Hello world! &#8211; AMBUCS Altoona</title>
 <meta name="robots" content="noindex, nofollow">
 <link rel="dns-prefetch" href="//fonts.googleapis.com">
 <link rel="alternate" type="application/rss+xml" title="AMBUCS Altoona &raquo; Feed" href="/feed/">
 <link rel="alternate" type="application/rss+xml" title="AMBUCS Altoona &raquo; Comments Feed" href="/comments/feed/">
 <link rel="alternate" type="application/rss+xml" title="AMBUCS Altoona &raquo; Hello world! Comments Feed" href="/2022/12/12/hello-world/feed/">
-<link rel="stylesheet" id="wp-block-library-css" href="/wp-includes/css/dist/block-library/style.min.css" type="text/css" media="all">
-<link rel="stylesheet" id="classic-theme-styles-css" href="/wp-includes/css/classic-themes.min.css" type="text/css" media="all">
+<script type="text/javascript">
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.2.2"}};
+/*! This file is auto-generated */
+!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){p.clearRect(0,0,i.width,i.height),p.fillText(e,0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(t,0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(p&&p.fillText)switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s("🏳️‍⚧️","🏳️​⚧️")?!1:!s("🇺🇳","🇺​🇳")&&!s("🏴󠁧󠁢󠁥󠁮󠁧󠁿","🏴​󠁧​󠁢​󠁥​󠁮​󠁧​󠁿");case"emoji":return!s("🫱🏻‍🫲🏿","🫱🏻​🫲🏿")}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(e=t.source||{}).concatemoji?c(e.concatemoji):e.wpemoji&&e.twemoji&&(c(e.twemoji),c(e.wpemoji)))}(window,document,window._wpemojiSettings);
+</script>
+<style type="text/css">img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 0.07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}</style>
+	<link rel="stylesheet" id="wp-block-library-css" href="/wp-includes/css/dist/block-library/style.min.css?ver=6.2.2" type="text/css" media="all">
+<link rel="stylesheet" id="classic-theme-styles-css" href="/wp-includes/css/classic-themes.min.css?ver=6.2.2" type="text/css" media="all">
 <style id="global-styles-inline-css" type="text/css">body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
 .wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
 :where(.wp-block-columns.is-layout-flex){gap: 2em;}
 .wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}</style>
-<link rel="stylesheet" id="mesmerize-style-css" href="/wp-content/themes/mesmerize/style.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="mesmerize-style-css" href="/wp-content/themes/mesmerize/style.min.css?ver=1.6.112" type="text/css" media="all">
 <style id="mesmerize-style-inline-css" type="text/css">img.logo.dark, img.custom-logo{width:auto;max-height:70px !important;}
 /** cached kirki style */@media screen and (min-width: 768px){.header-homepage{background-position:center top;}}.header-homepage:not(.header-slide).color-overlay:before{background:#000000;}.header-homepage:not(.header-slide) .background-overlay,.header-homepage:not(.header-slide).color-overlay::before{opacity:0.6;}.header.color-overlay:before{background:#000000;}.header .background-overlay,.header.color-overlay::before{opacity:0.6;}.header.color-overlay:after{filter:invert(0%) ;}.header-homepage .header-description-row{padding-top:14%;padding-bottom:14%;}.inner-header-description{padding-top:8%;padding-bottom:8%;}.mesmerize-front-page .navigation-bar.bordered{border-bottom-color:rgba(255, 255, 255, 0.5);border-bottom-width:1px;border-bottom-style:solid;}.mesmerize-inner-page .navigation-bar.bordered{border-bottom-color:rgba(255, 255, 255, 0.5);border-bottom-width:1px;border-bottom-style:solid;}@media screen and (max-width:767px){.header-homepage .header-description-row{padding-top:10%;padding-bottom:10%;}}@media only screen and (min-width: 768px){.header-content .align-holder{width:85%!important;}.inner-header-description{text-align:center!important;}}</style>
-<link rel="stylesheet" id="mesmerize-style-bundle-css" href="/wp-content/themes/mesmerize/assets/css/theme.bundle.min.css" type="text/css" media="all">
-<link rel="stylesheet" id="mesmerize-fonts-css" data-href="https://fonts.googleapis.com/css?family=Open+Sans%3A300%2C400%2C600%2C700%7CMuli%3A300%2C300italic%2C400%2C400italic%2C600%2C600italic%2C700%2C700italic%2C900%2C900italic%7CPlayfair+Display%3A400%2C400italic%2C700%2C700italic&#038;subset=latin%2Clatin-ext&#038;display=swap" type="text/css" media="all"> <script defer src="data:text/javascript;base64,CiAgICAgICAgICAgIC8qIDwhW0NEQVRBWyAqLwogICAgICAgICAgICB2YXIgcmNld3BwID0gewogICAgICAgICAgICAgICAgImFqYXhfdXJsIjoiaHR0cHM6Ly81NC4xNjYuMTM2LjIyNS93cC1hZG1pbi9hZG1pbi1hamF4LnBocCIsCiAgICAgICAgICAgICAgICAibm9uY2UiOiAiNDdiNzg4MGQzNyIsCiAgICAgICAgICAgICAgICAiaG9tZV91cmwiOiAiaHR0cHM6Ly81NC4xNjYuMTM2LjIyNS8iLAogICAgICAgICAgICAgICAgInNldHRpbmdzX2ljb24iOiAnaHR0cHM6Ly81NC4xNjYuMTM2LjIyNS93cC1jb250ZW50L3BsdWdpbnMvZXhwb3J0LXdwLXBhZ2UtdG8tc3RhdGljLWh0bWwvYWRtaW4vaW1hZ2VzL3NldHRpbmdzLnBuZycsCiAgICAgICAgICAgICAgICAic2V0dGluZ3NfaG92ZXJfaWNvbiI6ICdodHRwczovLzU0LjE2Ni4xMzYuMjI1L3dwLWNvbnRlbnQvcGx1Z2lucy9leHBvcnQtd3AtcGFnZS10by1zdGF0aWMtaHRtbC9hZG1pbi9pbWFnZXMvc2V0dGluZ3NfaG92ZXIucG5nJwogICAgICAgICAgICB9OwogICAgICAgICAgICAvKiBdXVw+ICovCiAgICAgICAg"></script> <script defer type="text/javascript" src="/wp-includes/js/jquery/jquery.min.js" id="jquery-core-js"></script> <script defer type="text/javascript" src="/wp-includes/js/jquery/jquery-migrate.min.js" id="jquery-migrate-js"></script> <script defer id="jquery-js-after" src="data:text/javascript;base64,CiAgICAKICAgICAgICAoZnVuY3Rpb24gKCkgewogICAgICAgICAgICBmdW5jdGlvbiBzZXRIZWFkZXJUb3BTcGFjaW5nKCkgewoKICAgICAgICAgICAgICAgIHNldFRpbWVvdXQoZnVuY3Rpb24oKSB7CiAgICAgICAgICAgICAgICAgIHZhciBoZWFkZXJUb3AgPSBkb2N1bWVudC5xdWVyeVNlbGVjdG9yKCcuaGVhZGVyLXRvcCcpOwogICAgICAgICAgICAgICAgICB2YXIgaGVhZGVycyA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3JBbGwoJy5oZWFkZXItd3JhcHBlciAuaGVhZGVyLC5oZWFkZXItd3JhcHBlciAuaGVhZGVyLWhvbWVwYWdlJyk7CgogICAgICAgICAgICAgICAgICBmb3IgKHZhciBpID0gMDsgaSA8IGhlYWRlcnMubGVuZ3RoOyBpKyspIHsKICAgICAgICAgICAgICAgICAgICAgIHZhciBpdGVtID0gaGVhZGVyc1tpXTsKICAgICAgICAgICAgICAgICAgICAgIGl0ZW0uc3R5bGUucGFkZGluZ1RvcCA9IGhlYWRlclRvcC5nZXRCb3VuZGluZ0NsaWVudFJlY3QoKS5oZWlnaHQgKyAicHgiOwogICAgICAgICAgICAgICAgICB9CgogICAgICAgICAgICAgICAgICAgIHZhciBsYW5ndWFnZVN3aXRjaGVyID0gZG9jdW1lbnQucXVlcnlTZWxlY3RvcignLm1lc21lcml6ZS1sYW5ndWFnZS1zd2l0Y2hlcicpOwoKICAgICAgICAgICAgICAgICAgICBpZihsYW5ndWFnZVN3aXRjaGVyKXsKICAgICAgICAgICAgICAgICAgICAgICAgbGFuZ3VhZ2VTd2l0Y2hlci5zdHlsZS50b3AgPSAiY2FsYyggIiArICBoZWFkZXJUb3AuZ2V0Qm91bmRpbmdDbGllbnRSZWN0KCkuaGVpZ2h0ICsgInB4ICsgMXJlbSkiIDsKICAgICAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICB9LCAxMDApOwoKICAgICAgICAgICAgIAogICAgICAgICAgICB9CgogICAgICAgICAgICB3aW5kb3cuYWRkRXZlbnRMaXN0ZW5lcigncmVzaXplJywgc2V0SGVhZGVyVG9wU3BhY2luZyk7CiAgICAgICAgICAgIHdpbmRvdy5tZXNtZXJpemVTZXRIZWFkZXJUb3BTcGFjaW5nID0gc2V0SGVhZGVyVG9wU3BhY2luZwogICAgICAgICAgICBtZXNtZXJpemVEb21SZWFkeShzZXRIZWFkZXJUb3BTcGFjaW5nKTsKICAgICAgICB9KSgpOwogICAgCiAgICAK"></script> <link rel="https://api.w.org/" href="/wp-json/">
+<link rel="stylesheet" id="mesmerize-style-bundle-css" href="/wp-content/themes/mesmerize/assets/css/theme.bundle.min.css?ver=1.6.112" type="text/css" media="all">
+<link rel="stylesheet" id="mesmerize-fonts-css" data-href="https://fonts.googleapis.com/css?family=Open+Sans%3A300%2C400%2C600%2C700%7CMuli%3A300%2C300italic%2C400%2C400italic%2C600%2C600italic%2C700%2C700italic%2C900%2C900italic%7CPlayfair+Display%3A400%2C400italic%2C700%2C700italic&#038;subset=latin%2Clatin-ext&#038;display=swap" type="text/css" media="all">
+<script type="text/javascript" src="/wp-includes/js/jquery/jquery.min.js?ver=3.6.4" id="jquery-core-js"></script>
+<script type="text/javascript" src="/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.0" id="jquery-migrate-js"></script>
+<script type="text/javascript" id="jquery-js-after">
+    
+        (function () {
+            function setHeaderTopSpacing() {
+
+                setTimeout(function() {
+                  var headerTop = document.querySelector('.header-top');
+                  var headers = document.querySelectorAll('.header-wrapper .header,.header-wrapper .header-homepage');
+
+                  for (var i = 0; i < headers.length; i++) {
+                      var item = headers[i];
+                      item.style.paddingTop = headerTop.getBoundingClientRect().height + "px";
+                  }
+
+                    var languageSwitcher = document.querySelector('.mesmerize-language-switcher');
+
+                    if(languageSwitcher){
+                        languageSwitcher.style.top = "calc( " +  headerTop.getBoundingClientRect().height + "px + 1rem)" ;
+                    }
+                    
+                }, 100);
+
+             
+            }
+
+            window.addEventListener('resize', setHeaderTopSpacing);
+            window.mesmerizeSetHeaderTopSpacing = setHeaderTopSpacing
+            mesmerizeDomReady(setHeaderTopSpacing);
+        })();
+    
+    
+</script>
+<link rel="https://api.w.org/" href="/wp-json/">
 <link rel="alternate" type="application/json" href="/wp-json/wp/v2/posts/1">
 <link rel="EditURI" type="application/rsd+xml" title="RSD" href="/xmlrpc.php?rsd">
-<meta name="generator" content="WordPress 6.2">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="/wp-includes/wlwmanifest.xml">
+<meta name="generator" content="WordPress 6.2.2">
 <link rel="canonical" href="/2022/12/12/hello-world/">
 <link rel="shortlink" href="/?p=1">
-<link rel="alternate" type="application/json+oembed" href="/wp-json/oembed/1.0/embed?url=https%3A%2F%2F%2F2022%2F12%2F12%2Fhello-world%2F">
-<link rel="alternate" type="text/xml+oembed" href="/wp-json/oembed/1.0/embed?url=https%3A%2F%2F%2F2022%2F12%2F12%2Fhello-world%2F#038;format=xml"> <script defer src="data:text/javascript;base64,DQoJCQl2YXIgamFidmZjciA9IHsNCgkJCQlzZWxlY3RvcjogIkRJVltpZD0ncGFnZSddID4gRElWID4gRElWID4gRElWID4gRElWID4gRElWID4gUCIsDQoJCQkJbWFuaXB1bGF0aW9uOiAiaHRtbCIsDQoJCQkJaHRtbDogIk1hZGUgYnkgc3R1ZGVudHMgZnJvbSA8YSBocmVmPVwiaHR0cHM6Ly93d3cuc291dGhoaWxscy5lZHVcIj5Tb3V0aCBIaWxscyBTY2hvb2wgb2YgQnVzaW5lc3MgJiBUZWNobm9sb2d5PC9hPiINCgkJCX07DQoJCQ=="></script> <meta name="bmi-version" content="1.2.8"> <script defer src="data:text/javascript;base64,CiAgICAgICAgKGZ1bmN0aW9uICgpIHsKICAgICAgICAgICAgdmFyIGxpbmtzID0gZG9jdW1lbnQucXVlcnlTZWxlY3RvckFsbCgnbGlua1tkYXRhLWhyZWZdJyk7CiAgICAgICAgICAgIGZvciAodmFyIGkgPSAwOyBpIDwgbGlua3MubGVuZ3RoOyBpKyspIHsKICAgICAgICAgICAgICAgIHZhciBpdGVtID0gbGlua3NbaV07CiAgICAgICAgICAgICAgICBpdGVtLmhyZWYgPSBpdGVtLmdldEF0dHJpYnV0ZSgnZGF0YS1ocmVmJykKICAgICAgICAgICAgfQogICAgICAgIH0pKCk7CiAgICA="></script> <link rel="pingback" href="/xmlrpc.php">
+<link rel="alternate" type="application/json+oembed" href="/wp-json/oembed/1.0/embed?url=http%3A%2F%2F%2F2022%2F12%2F12%2Fhello-world%2F">
+<link rel="alternate" type="text/xml+oembed" href="/wp-json/oembed/1.0/embed?url=http%3A%2F%2F%2F2022%2F12%2F12%2Fhello-world%2F#038;format=xml">
+		<script>
+			var jabvfcr = {
+				selector: "DIV[id='page'] > DIV > DIV > DIV > DIV > DIV > P",
+				manipulation: "html",
+				html: "Made by students from <a href=\"https://www.southhills.edu\">South Hills School of Business & Technology<\/a>"
+			};
+		</script>
+		<meta name="bmi-version" content="1.2.9">    <script type="text/javascript" data-name="async-styles">
+        (function () {
+            var links = document.querySelectorAll('link[data-href]');
+            for (var i = 0; i < links.length; i++) {
+                var item = links[i];
+                item.href = item.getAttribute('data-href')
+            }
+        })();
+    </script>
+	<link rel="pingback" href="/xmlrpc.php">
 <style type="text/css" id="custom-background-css">body.custom-background { background-color: #f5fafd; }</style>
-<style type="text/css" id="wp-custom-css">p.header-subtitle {
+			<style type="text/css" id="wp-custom-css">p.header-subtitle {
   font-family: "Muli", sans-serif;
   font-size: 1.9rem;
   font-weight: 300;
@@ -46,15 +160,17 @@
     border-radius: 20px;
     padding: 20px;
 }</style>
-<style id="page-content-custom-styles"></style>
-<style data-name="header-shapes">.header.color-overlay:after {background:url(/wp-content/themes/mesmerize/assets/images/header-shapes/circles.png) center center/ cover no-repeat}</style>
-<style data-name="background-content-colors">.mesmerize-inner-page .page-content,
+			<style id="page-content-custom-styles"></style>
+	        <style data-name="header-shapes">.header.color-overlay:after {background:url(/wp-content/themes/mesmerize/assets/images/header-shapes/circles.png) center center/ cover no-repeat}</style>
+            <style data-name="background-content-colors">.mesmerize-inner-page .page-content,
         .mesmerize-inner-page .content,
         .mesmerize-front-page.mesmerize-content-padding .page-content {
             background-color: #f5fafd;
         }</style>
-</head>
-<body class="post-template-default single single-post postid-1 single-format-standard custom-background wp-custom-logo overlap-first-section mesmerize-inner-page"> <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-dark-grayscale"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0 0.49803921568627"></fefuncr><fefuncg type="table" tablevalues="0 0.49803921568627"></fefuncg><fefuncb type="table" tablevalues="0 0.49803921568627"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-grayscale"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0 1"></fefuncr><fefuncg type="table" tablevalues="0 1"></fefuncg><fefuncb type="table" tablevalues="0 1"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-purple-yellow"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0.54901960784314 0.98823529411765"></fefuncr><fefuncg type="table" tablevalues="0 1"></fefuncg><fefuncb type="table" tablevalues="0.71764705882353 0.25490196078431"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-blue-red"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0 1"></fefuncr><fefuncg type="table" tablevalues="0 0.27843137254902"></fefuncg><fefuncb type="table" tablevalues="0.5921568627451 0.27843137254902"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-midnight"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0 0"></fefuncr><fefuncg type="table" tablevalues="0 0.64705882352941"></fefuncg><fefuncb type="table" tablevalues="0 1"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-magenta-yellow"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0.78039215686275 1"></fefuncr><fefuncg type="table" tablevalues="0 0.94901960784314"></fefuncg><fefuncb type="table" tablevalues="0.35294117647059 0.47058823529412"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-purple-green"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0.65098039215686 0.40392156862745"></fefuncr><fefuncg type="table" tablevalues="0 1"></fefuncg><fefuncb type="table" tablevalues="0.44705882352941 0.4"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-blue-orange"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0.098039215686275 1"></fefuncr><fefuncg type="table" tablevalues="0 0.66274509803922"></fefuncg><fefuncb type="table" tablevalues="0.84705882352941 0.41960784313725"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><style>.screen-reader-text[href="#page-content"]:focus {
+    </head>
+
+<body class="post-template-default single single-post postid-1 single-format-standard custom-background wp-custom-logo overlap-first-section mesmerize-inner-page">
+<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-dark-grayscale"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0 0.49803921568627"></fefuncr><fefuncg type="table" tablevalues="0 0.49803921568627"></fefuncg><fefuncb type="table" tablevalues="0 0.49803921568627"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-grayscale"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0 1"></fefuncr><fefuncg type="table" tablevalues="0 1"></fefuncg><fefuncb type="table" tablevalues="0 1"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-purple-yellow"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0.54901960784314 0.98823529411765"></fefuncr><fefuncg type="table" tablevalues="0 1"></fefuncg><fefuncb type="table" tablevalues="0.71764705882353 0.25490196078431"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-blue-red"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0 1"></fefuncr><fefuncg type="table" tablevalues="0 0.27843137254902"></fefuncg><fefuncb type="table" tablevalues="0.5921568627451 0.27843137254902"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-midnight"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0 0"></fefuncr><fefuncg type="table" tablevalues="0 0.64705882352941"></fefuncg><fefuncb type="table" tablevalues="0 1"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-magenta-yellow"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0.78039215686275 1"></fefuncr><fefuncg type="table" tablevalues="0 0.94901960784314"></fefuncg><fefuncb type="table" tablevalues="0.35294117647059 0.47058823529412"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-purple-green"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0.65098039215686 0.40392156862745"></fefuncr><fefuncg type="table" tablevalues="0 1"></fefuncg><fefuncb type="table" tablevalues="0.44705882352941 0.4"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-blue-orange"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0.098039215686275 1"></fefuncr><fefuncg type="table" tablevalues="0 0.66274509803922"></fefuncg><fefuncb type="table" tablevalues="0.84705882352941 0.41960784313725"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><style>.screen-reader-text[href="#page-content"]:focus {
    background-color: #f1f1f1;
    border-radius: 3px;
    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
@@ -63,81 +179,167 @@
    color: #21759b;
 
 }</style>
-<a class="skip-link screen-reader-text" href="#page-content">Skip to content</a><div id="page-top" class="header-top"><div class="navigation-bar bordered" data-sticky="0" data-sticky-mobile="1" data-sticky-to="top"><div class="navigation-wrapper "><div class="row basis-auto">
-<div class="logo_col col-xs col-sm-fit"> <a href="/" class="custom-logo-link" data-type="group" data-dynamic-mod="true" rel="home"><img width="300" height="95" src="/wp-content/uploads/2022/12/cropped-cropped-AMBUCS-Transparent.png" class="custom-logo" alt="AMBUCS Altoona" decoding="async"></a>
-</div>
-<div class="main_menu_col col-xs">
-<div id="mainmenu_container" class="row"><ul id="main_menu" class="active-line-bottom main-menu dropdown-menu">
+<a class="skip-link screen-reader-text" href="#page-content">Skip to content</a>
+
+<div id="page-top" class="header-top">
+		<div class="navigation-bar bordered" data-sticky="0" data-sticky-mobile="1" data-sticky-to="top">
+    <div class="navigation-wrapper ">
+    	<div class="row basis-auto">
+	        <div class="logo_col col-xs col-sm-fit">
+	            <a href="/" class="custom-logo-link" data-type="group" data-dynamic-mod="true" rel="home"><img width="300" height="95" src="/wp-content/uploads/2022/12/cropped-cropped-AMBUCS-Transparent.png" class="custom-logo" alt="AMBUCS Altoona" decoding="async"></a>	        </div>
+	        <div class="main_menu_col col-xs">
+	            <div id="mainmenu_container" class="row"><ul id="main_menu" class="active-line-bottom main-menu dropdown-menu">
 <li id="menu-item-13" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-13"><a href="/#page-top">Home</a></li>
-<li id="menu-item-21" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-21"><a href="/#about-1">About</a></li>
-<li id="menu-item-14" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-14"><a href="/#contact-1">Contact</a></li>
+<li id="menu-item-213" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-213"><a href="/#about">About</a></li>
+<li id="menu-item-216" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-216"><a href="/#donations">Donations</a></li>
+<li id="menu-item-14" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-14"><a href="/#contact">Contact</a></li>
 <li id="menu-item-41" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-41"><a target="_blank" rel="noopener" href="https://www.facebook.com/AmbucsAltoona/">Facebook</a></li>
-</ul></div> <a href="#" data-component="offcanvas" data-target="#offcanvas-wrapper" data-direction="right" data-width="300px" data-push="false"><div class="bubble"></div> <i class="fa fa-bars"></i> </a><div id="offcanvas-wrapper" class="hide force-hide  offcanvas-right">
-<div class="offcanvas-top"><div class="logo-holder"> <a href="/" class="custom-logo-link" data-type="group" data-dynamic-mod="true" rel="home"><img width="300" height="95" src="/wp-content/uploads/2022/12/cropped-cropped-AMBUCS-Transparent.png" class="custom-logo" alt="AMBUCS Altoona" decoding="async"></a>
-</div></div>
-<div id="offcanvas-menu" class="menu-main-menu-container"><ul id="offcanvas_menu" class="offcanvas_menu">
+</ul></div>    <a href="#" data-component="offcanvas" data-target="#offcanvas-wrapper" data-direction="right" data-width="300px" data-push="false">
+        <div class="bubble"></div>
+        <i class="fa fa-bars"></i>
+    </a>
+    <div id="offcanvas-wrapper" class="hide force-hide  offcanvas-right">
+        <div class="offcanvas-top">
+            <div class="logo-holder">
+                <a href="/" class="custom-logo-link" data-type="group" data-dynamic-mod="true" rel="home"><img width="300" height="95" src="/wp-content/uploads/2022/12/cropped-cropped-AMBUCS-Transparent.png" class="custom-logo" alt="AMBUCS Altoona" decoding="async"></a>            </div>
+        </div>
+        <div id="offcanvas-menu" class="menu-main-menu-container"><ul id="offcanvas_menu" class="offcanvas_menu">
 <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-13"><a href="/#page-top">Home</a></li>
-<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-21"><a href="/#about-1">About</a></li>
-<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-14"><a href="/#contact-1">Contact</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-213"><a href="/#about">About</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-216"><a href="/#donations">Donations</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-14"><a href="/#contact">Contact</a></li>
 <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-41"><a target="_blank" rel="noopener" href="https://www.facebook.com/AmbucsAltoona/">Facebook</a></li>
 </ul></div>
+            </div>
+    	        </div>
+	    </div>
+    </div>
 </div>
 </div>
-</div></div></div></div>
+
 <div id="page" class="site">
-<div class="header-wrapper"><div class="header  color-overlay" style="; background:#6a73da">
-<div class="inner-header-description gridContainer"><div class="row header-description-row"><div class="col-xs col-xs-12">
-<h1 class="hero-title"> Hello world!</h1>
-<p class="header-subtitle">The Ambucs Altoona Website</p>
-</div></div></div> <script defer src="data:text/javascript;base64,CgkJaWYgKHdpbmRvdy5tZXNtZXJpemVTZXRIZWFkZXJUb3BTcGFjaW5nKSB7CgkJCXdpbmRvdy5tZXNtZXJpemVTZXRIZWFkZXJUb3BTcGFjaW5nKCk7CgkJfQogICAg"></script> </div></div>
-<div id="page-content" class="content post-page"><div class="gridContainer"><div class="row">
-<div class="col-xs-12 col-sm-8 col-md-9"><div class="post-item"><div id="post-1" class="post-1 post type-post status-publish format-standard hentry category-uncategorized">
-<div class="post-content-single">
-<h2 class="h1">Hello world!</h2>
-<div class="post-meta muted"> <i class="font-icon-post fa fa-user"></i> <a href="/author/matthew/" title="Posts by matthew" rel="author">matthew</a> &nbsp;&nbsp;<i class="font-icon-post fa fa-folder-o"></i> <a href="/category/uncategorized/" rel="category tag">Uncategorized</a> &nbsp;&nbsp;<i class="font-icon-post fa fa-calendar"></i> <span class="post-date">December 12, 2022</span> &nbsp;|&nbsp;<i class="font-icon-post fa fa-comment-o"></i> <span>1</span>
+    <div class="header-wrapper">
+        <div class="header  color-overlay" style="; background:#6a73da">
+            								    <div class="inner-header-description gridContainer">
+        <div class="row header-description-row">
+    <div class="col-xs col-xs-12">
+        <h1 class="hero-title">
+            Hello world!        </h1>
+                    <p class="header-subtitle">The Ambucs Altoona Website</p>
+            </div>
+        </div>
+    </div>
+        <script>if (window.mesmerizeSetHeaderTopSpacing) {
+			window.mesmerizeSetHeaderTopSpacing();
+		}</script>
+                        </div>
+    </div>
+    <div id="page-content" class="content post-page">
+        <div class="gridContainer">
+            <div class="row">
+                <div class="col-xs-12 col-sm-8 col-md-9">
+                    <div class="post-item">
+						<div id="post-1" class="post-1 post type-post status-publish format-standard hentry category-uncategorized">
+
+    <div class="post-content-single">
+
+        <h2 class="h1">Hello world!</h2>
+
+        
+
+<div class="post-meta muted">
+
+  <i class="font-icon-post fa fa-user"></i>
+  <a href="/author/matthew/" title="Posts by matthew" rel="author">matthew</a>
+  &nbsp;&nbsp;<i class="font-icon-post fa fa-folder-o"></i>
+  <a href="/category/uncategorized/" rel="category tag">Uncategorized</a>
+  &nbsp;&nbsp;<i class="font-icon-post fa fa-calendar"></i>
+  <span class="post-date">December 12, 2022</span>
+
+
+  &nbsp;|&nbsp;<i class="font-icon-post fa fa-comment-o"></i>
+  <span>1</span>
 </div>
-<div class="post-content-inner"><p>Welcome to WordPress. This is your first post. Edit or delete it, then start writing!</p></div>
-</div>
+
+        <div class="post-content-inner">
+
+            
+<p>Welcome to WordPress. This is your first post. Edit or delete it, then start writing!</p>
+
+        </div>
+
+        
+    </div>
+
+
+    
+
 <div class="post-comments">
-<h3 class="comments-title"> <span class="comments-number"> One Response </span>
-</h3>
-<ol class="comment-list">
-<li class="comment even thread-even depth-1" id="comment-1"><div id="div-comment-1" class="comment-body">
-<div class="comment-author vcard"> <img alt="" src="https://secure.gravatar.com/avatar/d7a973c7dab26985da5f961be7b74480?s=32&#038;d=mm&#038;r=g" srcset="https://secure.gravatar.com/avatar/d7a973c7dab26985da5f961be7b74480?s=64&#038;d=mm&#038;r=g 2x" class="avatar avatar-32 photo" height="32" width="32" decoding="async"> <cite class="fn"><a href="https://wordpress.org/" class="url" rel="ugc external nofollow">A WordPress Commenter</a></cite> <span class="says">says:</span>
-</div>
-<div class="comment-meta commentmetadata"> <a href="/2022/12/12/hello-world/#comment-1">December 12, 2022 at 3:37 pm</a>
-</div>
-<p>Hi, this is a comment.<br> To get started with moderating, editing, and deleting comments, please visit the Comments screen in the dashboard.<br> Commenter avatars come from <a href="https://en.gravatar.com/">Gravatar</a>.</p>
-<div class="reply"><a rel="nofollow" class="comment-reply-link" href="/2022/12/12/hello-world/?replytocom=1#respond" data-commentid="1" data-postid="1" data-belowelement="div-comment-1" data-respondelement="respond" data-replyto="Reply to A WordPress Commenter" aria-label="Reply to A WordPress Commenter">Reply</a></div>
-</div></li>
+	    <h3 class="comments-title">
+    	<span class="comments-number">
+				One Response    	</span>
+    </h3>
+
+  	<ol class="comment-list">
+      		<li class="comment even thread-even depth-1" id="comment-1">
+				<div id="div-comment-1" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt="" src="http://1.gravatar.com/avatar/d7a973c7dab26985da5f961be7b74480?s=32&#038;d=mm&#038;r=g" srcset="http://1.gravatar.com/avatar/d7a973c7dab26985da5f961be7b74480?s=64&#038;d=mm&#038;r=g 2x" class="avatar avatar-32 photo" height="32" width="32" decoding="async">			<cite class="fn"><a href="https://wordpress.org/" class="url" rel="ugc external nofollow">A WordPress Commenter</a></cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata">
+			<a href="/2022/12/12/hello-world/#comment-1">December 12, 2022 at 3:37 pm</a>		</div>
+
+		<p>Hi, this is a comment.<br>
+To get started with moderating, editing, and deleting comments, please visit the Comments screen in the dashboard.<br>
+Commenter avatars come from <a href="https://en.gravatar.com/">Gravatar</a>.</p>
+
+		<div class="reply"><a rel="nofollow" class="comment-reply-link" href="/2022/12/12/hello-world/?replytocom=1#respond" data-commentid="1" data-postid="1" data-belowelement="div-comment-1" data-respondelement="respond" data-replyto="Reply to A WordPress Commenter" aria-label="Reply to A WordPress Commenter">Reply</a></div>
+				</div>
+				</li>
 <!-- #comment-## -->
-</ol>
-</div> <!-- /post-comments --><div class="comments-form"><div class="comment-form">
-<div id="respond" class="comment-respond">
-<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="/2022/12/12/hello-world/#respond" style="display:none;">Cancel reply</a></small>
+  	</ol>
+
+  	   
+  
+</div>
+<!-- /post-comments -->
+
+  <div class="comments-form">
+    <div class="comment-form">
+     		<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="/2022/12/12/hello-world/#respond" style="display:none;">Cancel reply</a></small>
 </h3>
-<form action="https://54.166.136.225/wp-comments-post.php" method="post" id="commentform" class="comment-form">
+<form action="http://ambucs.test/wp-comments-post.php" method="post" id="commentform" class="comment-form">
 <p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> <span class="required-field-message">Required fields are marked <span class="required">*</span></span></p>
-<p class="comment-form-comment"><label for="comment">Comment <span class="required">*</span></label><textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea></p>
+<p class="comment-form-comment"><label for="comment">Comment <span class="required">*</span></label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea></p>
 <p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" autocomplete="name" required="required"></p>
 <p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="text" value="" size="30" maxlength="100" aria-describedby="email-notes" autocomplete="email" required="required"></p>
 <p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="text" value="" size="30" maxlength="200" autocomplete="url"></p>
 <p class="comment-form-cookies-consent"><input id="wp-comment-cookies-consent" name="wp-comment-cookies-consent" type="checkbox" value="yes"> <label for="wp-comment-cookies-consent">Save my name, email, and website in this browser for the next time I comment.</label></p>
-<p class="form-submit"><input name="submit" type="submit" id="submit" class="button blue small" value="Post Comment"> <input type="hidden" name="comment_post_ID" value="1" id="comment_post_ID"> <input type="hidden" name="comment_parent" id="comment_parent" value="0"></p>
-</form>
-</div>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="button blue small" value="Post Comment"> <input type="hidden" name="comment_post_ID" value="1" id="comment_post_ID">
+<input type="hidden" name="comment_parent" id="comment_parent" value="0">
+</p>
+</form>	</div>
 <!-- #respond -->
-</div></div>
-</div></div></div>
-<div class="sidebar col-sm-4 col-md-3"><div class="sidebar-row">
-<div id="block-2" class="widget widget_block widget_search"><form role="search" method="get" action="https://54.166.136.225/" class="wp-block-search__button-outside wp-block-search__text-button wp-block-search">
+	    </div>
+  </div>
+
+</div>
+                    </div>
+                </div>
+				
+<div class="sidebar col-sm-4 col-md-3">
+    <div class="sidebar-row">
+        <div id="block-2" class="widget widget_block widget_search"><form role="search" method="get" action="http://ambucs.test/" class="wp-block-search__button-outside wp-block-search__text-button wp-block-search">
 <label for="wp-block-search__input-1" class="wp-block-search__label">Search</label><div class="wp-block-search__inside-wrapper ">
 <input type="search" id="wp-block-search__input-1" class="wp-block-search__input" name="s" value="" placeholder="" required><button type="submit" class="wp-block-search__button wp-element-button">Search</button>
 </div>
 </form></div>
 <div id="block-3" class="widget widget_block"><div class="wp-block-group is-layout-flow"><div class="wp-block-group__inner-container">
 <h2 class="wp-block-heading">Recent Posts</h2>
-<ul class="wp-block-latest-posts__list wp-block-latest-posts"><li><a class="wp-block-latest-posts__post-title" href="/2022/12/12/hello-world/">Hello world!</a></li></ul>
+<ul class="wp-block-latest-posts__list wp-block-latest-posts">
+<li><a class="wp-block-latest-posts__post-title" href="/2022/12/12/hello-world/">Hello world!</a></li>
+</ul>
 </div></div></div>
 <div id="block-4" class="widget widget_block"><div class="wp-block-group is-layout-flow"><div class="wp-block-group__inner-container">
 <h2 class="wp-block-heading">Recent Comments</h2>
@@ -145,14 +347,40 @@
 </div></div></div>
 <div id="block-5" class="widget widget_block"><div class="wp-block-group is-layout-flow"><div class="wp-block-group__inner-container">
 <h2 class="wp-block-heading">Archives</h2>
-<ul class="wp-block-archives-list wp-block-archives"><li><a href="/2022/12/">December 2022</a></li></ul>
+<ul class="wp-block-archives-list wp-block-archives">	<li><a href="/2022/12/">December 2022</a></li>
+</ul>
 </div></div></div>
 <div id="block-6" class="widget widget_block"><div class="wp-block-group is-layout-flow"><div class="wp-block-group__inner-container">
 <h2 class="wp-block-heading">Categories</h2>
-<ul class="wp-block-categories-list wp-block-categories"><li class="cat-item cat-item-1"><a href="/category/uncategorized/">Uncategorized</a></li></ul>
-</div></div></div>
-</div></div>
-</div></div></div>
-<div class="footer footer-simple  paralax"><div class="footer-content center-xs"><div class="gridContainer"><div class="row middle-xs footer-content-row"><div class="footer-content-col col-xs-12"><p class="copyright">&copy;&nbsp;&nbsp;2023&nbsp;AMBUCS Altoona.&nbsp;Built using WordPress and the <a rel="nofollow" target="_blank" href="https://extendthemes.com/go/built-with-mesmerize/" class="mesmerize-theme-link">Mesmerize Theme</a></p></div></div></div></div></div>
-</div> <script type="text/javascript" defer src="/wp-includes/js/imagesloaded.min.js" id="imagesloaded-js"></script> <script type="text/javascript" defer src="/wp-includes/js/masonry.min.js" id="masonry-js"></script> <script type="text/javascript" defer src="/wp-content/themes/mesmerize/assets/js/theme.bundle.min.js" id="mesmerize-theme-js"></script> <script defer type="text/javascript" src="/wp-content/cache/autoptimize/js/autoptimize_single_4db6a12c4cae4e861e57e108c22e9a7a.js" id="jabvfcr_script-js"></script> <script defer src="data:text/javascript;base64,CiAgICAgICAgLyh0cmlkZW50fG1zaWUpL2kudGVzdChuYXZpZ2F0b3IudXNlckFnZW50KSAmJiBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCAmJiB3aW5kb3cuYWRkRXZlbnRMaXN0ZW5lciAmJiB3aW5kb3cuYWRkRXZlbnRMaXN0ZW5lcigiaGFzaGNoYW5nZSIsIGZ1bmN0aW9uICgpIHsKICAgICAgICAgICAgdmFyIHQsIGUgPSBsb2NhdGlvbi5oYXNoLnN1YnN0cmluZygxKTsKICAgICAgICAgICAgL15bQS16MC05Xy1dKyQvLnRlc3QoZSkgJiYgKHQgPSBkb2N1bWVudC5nZXRFbGVtZW50QnlJZChlKSkgJiYgKC9eKD86YXxzZWxlY3R8aW5wdXR8YnV0dG9ufHRleHRhcmVhKSQvaS50ZXN0KHQudGFnTmFtZSkgfHwgKHQudGFiSW5kZXggPSAtMSksIHQuZm9jdXMoKSkKICAgICAgICB9LCAhMSk7CiAgICA="></script> </body>
+<ul class="wp-block-categories-list wp-block-categories">	<li class="cat-item cat-item-1">
+<a href="/category/uncategorized/">Uncategorized</a>
+</li>
+</ul>
+</div></div></div>    </div>
+</div>
+            </div>
+        </div>
+
+    </div>
+<div class="footer footer-simple  paralax">
+    <div class="footer-content center-xs">
+        <div class="gridContainer">
+	        <div class="row middle-xs footer-content-row">
+	            <div class="footer-content-col col-xs-12">
+	                    <p class="copyright">&copy;&nbsp;&nbsp;2023&nbsp;AMBUCS Altoona.&nbsp;Built using WordPress and the <a rel="nofollow" target="_blank" href="https://extendthemes.com/go/built-with-mesmerize/" class="mesmerize-theme-link">Mesmerize Theme</a></p>	            </div>
+	        </div>
+	    </div>
+    </div>
+</div>
+	</div>
+<script type="text/javascript" defer src="/wp-includes/js/imagesloaded.min.js?ver=4.1.4" id="imagesloaded-js"></script>
+<script type="text/javascript" defer src="/wp-includes/js/masonry.min.js?ver=4.2.2" id="masonry-js"></script>
+<script type="text/javascript" defer src="/wp-content/themes/mesmerize/assets/js/theme.bundle.min.js?ver=1.6.112" id="mesmerize-theme-js"></script>
+<script type="text/javascript" src="/wp-includes/js/comment-reply.min.js?ver=6.2.2" id="comment-reply-js"></script>
+<script type="text/javascript" src="/wp-content/plugins/visual-footer-credit-remover/script.js?ver=6.2.2" id="jabvfcr_script-js"></script>
+    <script>/(trident|msie)/i.test(navigator.userAgent) && document.getElementById && window.addEventListener && window.addEventListener("hashchange", function () {
+            var t, e = location.hash.substring(1);
+            /^[A-z0-9_-]+$/.test(e) && (t = document.getElementById(e)) && (/^(?:a|select|input|button|textarea)$/i.test(t.tagName) || (t.tabIndex = -1), t.focus())
+        }, !1);</script>
+	</body>
 </html>
