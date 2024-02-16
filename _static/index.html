@@ -183,6 +183,10 @@ img.emoji {
         .mesmerize-front-page.mesmerize-content-padding .page-content {
             background-color: #f5fafd;
         }</style>
+
+        <link rel="stylesheet" href="modal.css" type="text/css" media="all">
+
+
     </head>
 
 <body class="home page-template page-template-page-templates page-template-homepage page-template-page-templateshomepage-php page page-id-5 custom-background wp-custom-logo overlap-first-section mesmerize-front-page mesmerize-content-no-padding ">
@@ -216,8 +220,13 @@ img.emoji {
     <div id="offcanvas-wrapper" class="hide force-hide  offcanvas-right">
         <div class="offcanvas-top">
             <div class="logo-holder">
-                <a href="/" class="custom-logo-link" data-type="group" data-dynamic-mod="true" rel="home" aria-current="page"><img width="300" height="95" src="/wp-content/uploads/2022/12/cropped-cropped-AMBUCS-Transparent.png" class="custom-logo" alt="AMBUCS Altoona" decoding="async"></a>            </div>
+                <a href="/" class="custom-logo-link" data-type="group" data-dynamic-mod="true" rel="home" aria-current="page"><img width="300" height="95" src="/wp-content/uploads/2022/12/cropped-cropped-AMBUCS-Transparent.png" class="custom-logo" alt="AMBUCS Altoona" decoding="async"></a>       </div>
+                
+                
+
         </div>
+
+        
         <div id="offcanvas-menu" class="menu-main-menu-container"><ul id="offcanvas_menu" class="offcanvas_menu">
 <li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-home menu-item-13"><a href="/#page-top">Home</a></li>
 <li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-home menu-item-213"><a href="/#about">About</a></li>
@@ -243,9 +252,16 @@ img.emoji {
     <div class="header-content header-content-centered col-md col-xs-12">
         <div class="align-holder center">
             <h1 class="hero-title">Welcome to AMBUCS - Altoona PA</h1>
+<p class="header-subtitle"><button style="font-size: 1.25em; padding: 10px;" id="myBtn">Ambucs 2024 <span style="color: red">Blood Screening</span></button></p>
 <p class="header-subtitle">Find us on Facebook for the newest and most up-to-date information.</p>
 <div data-dynamic-mod-container class="header-buttons-wrapper">
 <a class="button big color1 round customize-unpreviewable" target="_blank" href="https://www.facebook.com/AmbucsAltoona">Facebook</a><a class="button big color-white round outline" target="_self" href="#contact">Contact Us</a>
+
+
+
+
+
+
 </div>        </div>
     </div>
 </div>
@@ -258,8 +274,22 @@ img.emoji {
                </div>
 </div>
 
+
+
+
+
     <div id="page-content" class="page-content">
+
+
+
+
+
         <div class="content">
+
+
+
+
+
             <div id="overlappable-4" style="position: relative; top: -75px" data-label="Overlappable" data-id="overlappable-4" data-export-id="overlappable-4" data-category="overlappable" class="overlappable-4 content-section content-section-spacing" data-overlap="true"><div class="gridContainer"> <div data-type="row" class="row spaced-cols text-center"> <div class="col-xs-12 col-sm-4 col-padding"> <i class="fa icon shadow-large-black aligncenter color1 fa-graduation-cap reverse round large"></i> <div data-type="column" class="">
 <h5 class="">Scholarships</h5> <p class="">More than $8 million in scholarships have been awarded by AMBUCS to therapy students pursuing degrees in physical therapy, occupational therapy, speech pathology, and audiology.</p>
 <a class="link" href="https://ambucs.org/therapists/scholarship-program" target="_blank" data-cp-link="1" rel="noopener">Ambucs National Scholarships Page</a>
@@ -314,5 +344,23 @@ img.emoji {
             var t, e = location.hash.substring(1);
             /^[A-z0-9_-]+$/.test(e) && (t = document.getElementById(e)) && (/^(?:a|select|input|button|textarea)$/i.test(t.tagName) || (t.tabIndex = -1), t.focus())
         }, !1);</script>
+
+
+
+        <!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content" style="text-align: center; color: #111; background-color: white; padding: 25px;">
+    <p><strong>March<br>Watch your mailbox</strong> for information on the 2024 Spring Blood Screening.</p>
+    <p><strong>April<br>Purchase a voucher</strong> from Altoona AMBUCS on April 20 or April 27 at the Blair County Convention Center.</p>
+    <p><strong>May<br>Take your voucher</strong> to any local UPMC lab location to redeem for your 26-test blood screening.</p>
+    <button class="close" style="padding: 5px;"><strong>close</strong></button>
+  </div>
+
+</div>
+<script src="modal.js"></script>
+
+
 	</body>
 </html>
